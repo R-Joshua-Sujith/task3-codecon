@@ -1,0 +1,81 @@
+h1{
+  text-align: center;
+  color:white;
+}
+
+.container{
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+form{
+  background-color: white;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap:30px;
+  border-radius: 20px;
+  width:500px;
+  box-sizing: border-box;
+  padding:30px;
+}
+
+input[type="text"]{
+  padding:10px;
+  width: 90%;
+  border:none;
+  border-bottom: 1px solid rgb(33,33,55);
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+
+input[type="number"]{
+  padding:10px;
+  border:none;
+  border-bottom: 1px solid rgb(33,33,55)
+}
+
+input[type="number"]:focus{
+  outline:none;
+}
+
+.subForm{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+button{
+  width: 100%;
+  padding:10px;
+  background-color: rgb(33,33,55);
+  color:white;
+  border:none;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: white;
+  color:rgb(33,33,55);
+  border:1px solid rgb(33,33,55)
+}
+
+select{
+  padding:10px;
+  cursor: pointer;
+}
+
+@media(max-width:600px){
+  form{
+    width:300px;
+  }
+}
+
